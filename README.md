@@ -3,7 +3,7 @@
 The aim of this project is to **analyze and visualize the spectral flow** of the **Dirichlet Laplacian**
 $-\Delta_{\Omega(t)}$ on a smoothly evolving family of planar domains $\{\Omega(t)\}_{t\in[0,T]}$.
 We develop numerical and geometric tools to study how eigenvalues and eigenfunctions evolve
-as the shape changes, defining a **connection** and **curvature** on the bundle of eigenspaces.
+as the shape changes, defining a **connection** and **curvature** on the bundle of eigenspaces. Please report any bugs you find.
 
 This provides a **computational differential geometry of eigenmodes** — a way to quantify
 how modes rotate, permute, and accumulate geometric phase under deformations of the domain.
@@ -27,8 +27,6 @@ python scripts/run_quick_demo.py
 Open the newest `runs/<timestamp>/` to see figures.
 
 For a full interactive flow, open `notebooks/00_driver.ipynb` and run cells top‑to‑bottom (first cell auto‑installs the package for the notebook kernel).
-
-A sample run with pre‑rendered figures lives in `runs/sample_run/` for immediate visual inspection.
 
 ---
 
