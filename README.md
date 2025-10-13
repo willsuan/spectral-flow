@@ -1,6 +1,6 @@
 # Visualizing Spectral Flow and Harmonic Transport
 
-The aim of this project is to analyze and visualize the spectral flow of the Dirichlet Laplacian
+The aim of this project is to numerically analyze and visualize the spectral flow of the Dirichlet Laplacian
 $-\Delta_{\Omega(t)}$ on a smoothly evolving family of planar domains $\{\Omega(t)\}_{t\in[0,T]}$.
 We develop numerical and geometric tools to study how eigenvalues and eigenfunctions evolve
 as the shape changes, defining a connection and curvature on the bundle of eigenspaces. Please report any bugs you find.
