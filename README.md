@@ -133,13 +133,9 @@ The unitary part of $P$ encodes mode permutation and geometric phase accumulatio
 ### Energy Flow and Evolving Basis
 
 For heat evolution $u_t = \Delta_{\Omega(t)}u$, project onto the instantaneous basis:
-$$
-\dot c_k = -\lambda_k c_k.
-$$
+$$\dot c_k = -\lambda_k c_k.$$
 Integrating gives
-$$
-c_k(t+\Delta t)=c_k(t)e^{-\lambda_k(t)\Delta t}.
-$$
+$$c_k(t+\Delta t)=c_k(t)e^{-\lambda_k(t)\Delta t}.$$
 
 Comparing this evolving-basis propagation to an implicit Euler time step on the full grid
 defines the energy defect — a measure of how well the evolving basis tracks the true dynamics.
