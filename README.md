@@ -1,11 +1,11 @@
 # Visualizing Spectral Flow and Harmonic Transport
 
-The aim of this project is to **analyze and visualize the spectral flow** of the **Dirichlet Laplacian**
+The aim of this project is to analyze and visualize the spectral flow of the Dirichlet Laplacian
 $-\Delta_{\Omega(t)}$ on a smoothly evolving family of planar domains $\{\Omega(t)\}_{t\in[0,T]}$.
 We develop numerical and geometric tools to study how eigenvalues and eigenfunctions evolve
-as the shape changes, defining a **connection** and **curvature** on the bundle of eigenspaces. Please report any bugs you find.
+as the shape changes, defining a connection and curvature on the bundle of eigenspaces. Please report any bugs you find.
 
-This provides a **computational differential geometry of eigenmodes** — a way to quantify
+This provides a computational differential geometry of eigenmodes — a way to quantify
 how modes rotate, permute, and accumulate geometric phase under deformations of the domain.
 
 Functionality:
@@ -43,21 +43,21 @@ $$
 $$
 
 The functions $\{\phi_k(t)\}$ form an orthonormal basis of $L^2(\Omega(t))$.
-Tracking their evolution defines the **spectral flow** $\lambda_k(t)$ and **mode transport**.
+Tracking their evolution defines the spectral flow $\lambda_k(t)$ and mode transport.
 
 ---
 
 ### Hadamard Shape Derivative
 
 If the boundary moves with normal velocity $V_n = V\!\cdot\!n$,
-the **Hadamard formula** gives the eigenvalue variation:
+the Hadamard formula gives the eigenvalue variation:
 
 $$
 \frac{d\lambda_k}{dt}
   = -\!\!\int_{\partial\Omega(t)} (\partial_n\phi_k)^2\, V_n\, ds.
 $$
 
-Numerically, this is approximated with a **narrow Gaussian band** around the boundary:
+Numerically, this is approximated with a narrow Gaussian band around the boundary:
 
 $$
 \int_{\partial\Omega} f\,ds
@@ -65,7 +65,7 @@ $$
 \delta_\sigma(s)=\frac{1}{\sqrt{2\pi}\sigma}e^{-s^2/(2\sigma^2)}.
 $$
 
-An **adaptive bandwidth** $\sigma(\theta)=\sigma_0 h/(1+\alpha|\kappa(\theta)|)$
+An adaptive bandwidth $\sigma(\theta)=\sigma_0 h/(1+\alpha|\kappa(\theta)|)$
 reduces bias near high-curvature boundary regions.
 
 ---
@@ -86,7 +86,7 @@ $$
 \widehat{\mathcal A}(t) \approx \frac{S - I}{\Delta t}
 $$
 
-is a discrete **connection** describing infinitesimal rotation of the basis.
+is a discrete connection describing infinitesimal rotation of the basis.
 
 #### Lie–algebra (log-polar) connection
 
@@ -115,14 +115,14 @@ analogous to the continuous identity $\mathcal F = \dot{\mathcal A} + \mathcal A
 
 ### Holonomy
 
-Along a closed deformation loop, the overlaps compose into the **holonomy**
+Along a closed deformation loop, the overlaps compose into the holonomy
 
 $$
 P = \prod_i S_i,
 $$
 
 a discrete path-ordered exponential.  
-The unitary part of $P$ encodes **mode permutation** and **geometric phase accumulation**.
+The unitary part of $P$ encodes mode permutation and geometric phase accumulation.
 
 - $|P|$ ≈ permutation matrix ⇒ mode relabeling after a cycle.  
 - $\mathrm{diag}(P)$ phases ⇒ Berry-type geometric phases.  
@@ -141,8 +141,8 @@ $$
 c_k(t+\Delta t)=c_k(t)e^{-\lambda_k(t)\Delta t}.
 $$
 
-Comparing this **evolving-basis propagation** to an **implicit Euler** time step on the full grid
-defines the **energy defect** — a measure of how well the evolving basis tracks the true dynamics.
+Comparing this evolving-basis propagation to an implicit Euler time step on the full grid
+defines the energy defect — a measure of how well the evolving basis tracks the true dynamics.
 
 ---
 
@@ -156,7 +156,7 @@ A(t)=\tfrac12\int_0^{2\pi}r(\theta,t)^2\,d\theta,\quad
 r\mapsto \gamma(t)r,\quad \gamma(t)=\sqrt{\frac{A(0)}{A(t)}}.
 $$
 
-Shape families (ellipses, cardioids, stars) form a **shape manifold**
+Shape families (ellipses, cardioids, stars) form a shape manifold
 with $L^2$ metric
 
 $$
@@ -178,6 +178,16 @@ $G_{ij}=\langle \partial r/\partial p_i,\partial r/\partial p_j\rangle.$
 | Curvature | $\mathcal F = \dot{\mathcal A}+\mathcal A^2$ | Finite difference stencil |
 | Holonomy | $\mathcal{P}\exp\!\int\mathcal{A}\,dt$ | Product $P=\prod S_i$ |
 | Shape derivative | Hadamard integral | Boundary narrow-band quadrature |
+
+### Sample Figures
+
+**Spectral braid**.
+Time evolution of the ordered Dirichlet–Laplacian eigenvalues $\lambda_k(t)$ for a smoothly deforming planar domain.  Each colored curve traces one eigenvalue branch, illustrating avoided crossings and level repulsion as the geometry evolves.  Shaded vertical bands mark timesteps where eigenvalue orderings interchange—“braiding’’ events that encode the spectral holonomy of the deformation.
+<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/bb7e8fb8-167d-4fdf-9deb-035162b14bf9" />
+
+**Continuity waterfall** $|\langle\varphi_k(t),\varphi_k(t+\Delta t)\rangle|$.
+Mode-overlap continuity between successive frames for the first 16 eigenfunctions.  Each horizontal trace (indexed by k) shows the self-overlap magnitude of mode k across time, quantifying how smoothly eigenfunctions are transported.  Values near 1 indicate adiabatic tracking; small dips correspond to near-degeneracies or mode mixing identified in the spectral-braid plot.
+<img width="1200" height="1110" alt="image-1" src="https://github.com/user-attachments/assets/9d0bc1b2-32b2-4558-8771-4c94df0101b7" />
 
 
 ## References
