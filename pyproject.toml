@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectral-flow-research"
+version = "1.0.0"
+description = "Spectral flow & harmonic transport on evolving domains — documented research kit (v1.0)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23","scipy>=1.10","matplotlib>=3.7","tqdm>=4.66"]
+authors = [{name="Research Kit"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]
