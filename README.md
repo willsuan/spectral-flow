@@ -186,7 +186,7 @@ Time evolution of the ordered Dirichlet–Laplacian eigenvalues $\lambda_k(t)$ f
 <img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/bb7e8fb8-167d-4fdf-9deb-035162b14bf9" />
 
 **Continuity waterfall** $|\langle\varphi_k(t),\varphi_k(t+\Delta t)\rangle|$.
-Mode-overlap continuity between successive frames for the first 16 eigenfunctions.  Each horizontal trace (indexed by k) shows the self-overlap magnitude of mode k across time, quantifying how smoothly eigenfunctions are transported.  Values near 1 indicate adiabatic tracking; small dips correspond to near-degeneracies or mode mixing identified in the spectral-braid plot.
+Mode-overlap continuity between successive frames for the first 16 eigenfunctions. Each horizontal trace (indexed by k) shows the self-overlap magnitude of mode k across time, quantifying how smoothly eigenfunctions are transported.  Overlap values near 1 indicate adiabatic tracking; small dips correspond to near-degeneracies or mode mixing identified in the spectral-braid plot.
 <img width="1200" height="1110" alt="image-1" src="https://github.com/user-attachments/assets/9d0bc1b2-32b2-4558-8771-4c94df0101b7" />
 
 
