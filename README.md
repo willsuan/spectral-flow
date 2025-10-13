@@ -175,8 +175,6 @@ $G_{ij}=\langle \partial r/\partial p_i,\partial r/\partial p_j\rangle.$
 | Holonomy | $\mathcal{P}\exp\!\int\mathcal{A}\,dt$ | Product $P=\prod S_i$ |
 | Shape derivative | Hadamard integral | Boundary narrow-band quadrature |
 
-### Sample Figures
-
 **Spectral braid**.
 Time evolution of the ordered Dirichlet–Laplacian eigenvalues $\lambda_k(t)$ for a smoothly deforming planar domain.  Each colored curve traces one eigenvalue branch, illustrating avoided crossings and level repulsion as the geometry evolves.  Shaded vertical bands mark timesteps where eigenvalue orderings interchange—“braiding’’ events that encode the spectral holonomy of the deformation.
 <img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/bb7e8fb8-167d-4fdf-9deb-035162b14bf9" />
