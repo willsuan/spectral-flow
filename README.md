@@ -187,9 +187,10 @@ Mode-overlap continuity between successive frames for the first 16 eigenfunction
 ## References
 
 1. J. Hadamard, *Mémoire sur le problème d’analyse relatif à l’équilibre des plaques élastiques encastrées* (1908).  
-2. M. V. Berry, *Quantal phase factors accompanying adiabatic changes*, Proc. R. Soc. Lond. A 392 (1984).  
-3. G. W. Stewart, *Matrix Algorithms II: Eigensystems*, SIAM (2001).  
-4. T. Sakurai et al., *Polar decomposition based approach for orthogonal eigenvector tracking*, Numer. Lin. Alg. Appl. (2013).  
-5. J. B. Keller & S. I. Rubinow, *Asymptotic solution of eigenvalue problems*, Ann. Phys. 9 (1960).
+2. M. V. Berry, *Quantal phase factors accompanying adiabatic changes*, Proc. R. Soc. Lond. A 392 (1984).
+3. 	S. C. Eisenstat & H. C. Elman, “Inexact Krylov Subspace Methods for Nonsymmetric Linear Systems,” SIAM Journal on Matrix Analysis and Applications, 21(4), 2000.
+4. 	M. E. Hochstenbach & F. J. C. Kraaijevanger, “A Continuation Method for Eigenpairs of Parametrized Hermitian Matrices,” Linear Algebra and its Applications, 432 (2010), 1425–1445.
+5. 	G. W. Stewart, Perturbation Theory for the Singular Value Decomposition, in Numerical Linear Algebra, SIAM (1999).
+6. J. B. Keller & S. I. Rubinow, *Asymptotic solution of eigenvalue problems*, Ann. Phys. 9 (1960).
 
 ---
